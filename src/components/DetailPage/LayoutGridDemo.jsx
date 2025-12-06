@@ -5,7 +5,7 @@ import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
 import { BackgroundBeamsWithCollisionDemo } from "../BackgroundBeamsWithCollisionDemo";
 import karthikImg from "../../assets/images/karthik1.png";
 import { HoverBorderGradientDemo } from "../HoverBorderGradientDemo";
-import { EncryptedText } from "../ui/encrypted-text";
+import { TextGenerateEffect } from "../ui/text-generate-effect";
 
 export function LayoutGridDemo() {
   return (
@@ -23,12 +23,10 @@ const SkeletonOne = () => {
           <p className="font-bold md:text-4xl text-xl text-white">
             Karthik Ajay
           </p>
-          <div className="font-normal text-base text-white mt-4 max-w-lg">
-            <EncryptedText
-              text="I am a passionate Full Stack Developer with a knack for building beautiful and functional web applications. I love exploring new technologies and creating seamless user experiences."
-              encryptedClassName="text-neutral-500"
-              revealedClassName="text-white"
-              revealDelayMs={20}
+          <div className="font-normal text-base text-white max-w-lg">
+            <TextGenerateEffect
+              words="I am a passionate Full Stack Developer with a knack for building beautiful and functional web applications. I love exploring new technologies and creating seamless user experiences."
+              className="text-white text-base font-normal"
             />
           </div>
         </div>

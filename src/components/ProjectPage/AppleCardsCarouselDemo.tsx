@@ -144,7 +144,7 @@ const PortfolioContent = () => {
             <div className="w-full rounded-xl">
                 <PortfolioScroll />
             </div>
-            <GithubButton href="#" />
+            <GithubButton href="https://github.com/karthikajay04/PortfolioWebsite" />
         </div>
     );
 };
